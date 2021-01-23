@@ -1,0 +1,33 @@
+{
+  "name": "rocketchat_setup",
+  "version": "1.0.0",
+  "description": "A setup for RocketChat",
+  "main": "./prod/bot.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf ./prod",
+    "build": "tsc",
+    "start": "node ./prod/bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeludemann/rocketchat_setup.git"
+  },
+  "keywords": [
+    "Rocket Chat",
+    "Setup",
+    "Tutorial"
+  ],
+  "author": "Mike Ludemann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikeludemann/rocketchat_setup/issues"
+  },
+  "homepage": "https://github.com/mikeludemann/rocketchat_setup#readme",
+  "devDependencies": {
+    "@rocket.chat/sdk": "^0.2.9-2",
+    "@types/node": "^14.14.22",
+    "dotenv": "^8.2.0",
+    "typescript": "^4.1.3"
+  }
+}
